@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-  return knex.schema.createTable("users", function(table) {
+  return knex.schema.createTable("comments", function(table) {
     table.increments();
     table.string("body").notNullable();
     table
